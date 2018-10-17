@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2704D5800722EA47DEE087D6 /* Pods_NCMBmemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6765D7E6F9F0FE34780D1FBA /* Pods_NCMBmemo.framework */; };
 		942E433521770FE700091D43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942E433421770FE700091D43 /* AppDelegate.swift */; };
-		942E433721770FE700091D43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942E433621770FE700091D43 /* ViewController.swift */; };
 		942E433A21770FE700091D43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942E433821770FE700091D43 /* Main.storyboard */; };
 		942E433C21770FE700091D43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 942E433B21770FE700091D43 /* Assets.xcassets */; };
 		942E433F21770FE700091D43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942E433D21770FE700091D43 /* LaunchScreen.storyboard */; };
+		942E43472177142800091D43 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942E43462177142800091D43 /* ListViewController.swift */; };
+		942E43492177145700091D43 /* AddMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942E43482177145700091D43 /* AddMemoViewController.swift */; };
+		942E434B2177147900091D43 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942E434A2177147900091D43 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6765D7E6F9F0FE34780D1FBA /* Pods_NCMBmemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCMBmemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		942E433121770FE700091D43 /* NCMBmemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NCMBmemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		942E433421770FE700091D43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		942E433621770FE700091D43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		942E433921770FE700091D43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		942E433B21770FE700091D43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		942E433E21770FE700091D43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		942E434021770FE700091D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		942E43462177142800091D43 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		942E43482177145700091D43 /* AddMemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMemoViewController.swift; sourceTree = "<group>"; };
+		942E434A2177147900091D43 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B14C34701C8E9E86C004E9D8 /* Pods-NCMBmemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCMBmemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NCMBmemo/Pods-NCMBmemo.release.xcconfig"; sourceTree = "<group>"; };
+		B9FC8FEF7B62E8F085454125 /* Pods-NCMBmemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCMBmemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NCMBmemo/Pods-NCMBmemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2704D5800722EA47DEE087D6 /* Pods_NCMBmemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79EA014FF04D660A62EB6E00 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9FC8FEF7B62E8F085454125 /* Pods-NCMBmemo.debug.xcconfig */,
+				B14C34701C8E9E86C004E9D8 /* Pods-NCMBmemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		942E432821770FE700091D43 = {
 			isa = PBXGroup;
 			children = (
 				942E433321770FE700091D43 /* NCMBmemo */,
 				942E433221770FE700091D43 /* Products */,
+				79EA014FF04D660A62EB6E00 /* Pods */,
+				9D46195ACEACB30B0DF7A99F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +75,23 @@
 			isa = PBXGroup;
 			children = (
 				942E433421770FE700091D43 /* AppDelegate.swift */,
-				942E433621770FE700091D43 /* ViewController.swift */,
+				942E434A2177147900091D43 /* DetailViewController.swift */,
+				942E43482177145700091D43 /* AddMemoViewController.swift */,
+				942E43462177142800091D43 /* ListViewController.swift */,
 				942E433821770FE700091D43 /* Main.storyboard */,
 				942E433B21770FE700091D43 /* Assets.xcassets */,
 				942E433D21770FE700091D43 /* LaunchScreen.storyboard */,
 				942E434021770FE700091D43 /* Info.plist */,
 			);
 			path = NCMBmemo;
+			sourceTree = "<group>";
+		};
+		9D46195ACEACB30B0DF7A99F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6765D7E6F9F0FE34780D1FBA /* Pods_NCMBmemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 942E434321770FE700091D43 /* Build configuration list for PBXNativeTarget "NCMBmemo" */;
 			buildPhases = (
+				86F60287CC3DFF6024700D2D /* [CP] Check Pods Manifest.lock */,
 				942E432D21770FE700091D43 /* Sources */,
 				942E432E21770FE700091D43 /* Frameworks */,
 				942E432F21770FE700091D43 /* Resources */,
+				A99E28983F031E2683BCE159 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,13 +163,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		86F60287CC3DFF6024700D2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NCMBmemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A99E28983F031E2683BCE159 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NCMBmemo/Pods-NCMBmemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/NCMB/NCMB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NCMB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NCMBmemo/Pods-NCMBmemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		942E432D21770FE700091D43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				942E433721770FE700091D43 /* ViewController.swift in Sources */,
+				942E43492177145700091D43 /* AddMemoViewController.swift in Sources */,
+				942E43472177142800091D43 /* ListViewController.swift in Sources */,
 				942E433521770FE700091D43 /* AppDelegate.swift in Sources */,
+				942E434B2177147900091D43 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +331,7 @@
 		};
 		942E434421770FE700091D43 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9FC8FEF7B62E8F085454125 /* Pods-NCMBmemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NCMBmemo/Info.plist;
@@ -270,6 +344,7 @@
 		};
 		942E434521770FE700091D43 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B14C34701C8E9E86C004E9D8 /* Pods-NCMBmemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NCMBmemo/Info.plist;
@@ -299,6 +374,7 @@
 				942E434521770FE700091D43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

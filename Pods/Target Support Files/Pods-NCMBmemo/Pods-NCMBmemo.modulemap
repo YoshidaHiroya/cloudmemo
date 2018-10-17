@@ -1,0 +1,6 @@
+framework module Pods_NCMBmemo {
+  umbrella header "Pods-NCMBmemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
