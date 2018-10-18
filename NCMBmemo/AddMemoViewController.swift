@@ -17,6 +17,11 @@ class AddMemoViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        memoTextView.becomeFirstResponder()
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -25,7 +30,7 @@ class AddMemoViewController: UIViewController {
     
     @IBAction func save(){
         let object = NCMBObject(className:"Memo")
-        object?.setObject(memoTextView, forKey: "memo")
+        object?.setObject(memoTextView.text, forKey: "memo")
         object?.saveInBackground({ (error) in
             if error != nil{
             print(error)

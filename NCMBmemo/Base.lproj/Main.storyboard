@@ -50,6 +50,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="memoTableView" destination="oMC-Bi-Zjz" id="Puv-Xj-rH8"/>
                         <segue destination="n1z-6a-h2v" kind="show" identifier="toDetail" id="enS-kW-DOt"/>
                     </connections>
                 </viewController>
