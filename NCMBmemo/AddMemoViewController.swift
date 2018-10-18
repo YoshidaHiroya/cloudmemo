@@ -7,9 +7,11 @@
 //
 
 import UIKit
-
+import NCMB
 class AddMemoViewController: UIViewController {
 
+    @IBOutlet var memoTextView :UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,15 +23,20 @@ class AddMemoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func save(){
+        let object = NCMBObject(className:"Memo")
+        object?.setObject(memoTextView, forKey: "memo")
+        object?.saveInBackground({ (error) in
+            if error != nil{
+            print(error)
+            }else{
+                let allertController = UIAlertController(title:"保存完了",message:"メモの保存が完了しました。メモ一覧に戻る。",preferredStyle:.alert)
+                let action = UIAlertAction(title:"ok",style:.default, handler:{(action) in
+                self.navigationController?.popViewController(animated: true)
+            })
+        allertController.addAction(action)
+                self.present(allertController,animated:true,completion:nil)
+            }
+            })
     }
-    */
-
 }
